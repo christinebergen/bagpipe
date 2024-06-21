@@ -31,7 +31,7 @@ const images = [
   { src: image6, credit: "Photo by Matt Carter" },
   { src: image7, credit: "Photo by Matt Carter" },
   { src: image8, credit: "Photo by Matt Carter" },
-  { src: image9, credit: "Photo by Unknown" },
+  { src: image9, credit: "Photo by Finding Charlotte Photography", link: "https://www.findingcharlotte.ca/", },
   {
     src: image10,
     credit: "Photo by Colin Smith Takes Pics",
