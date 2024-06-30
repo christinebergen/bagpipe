@@ -1,20 +1,27 @@
 import React from "react";
 import image1 from "../assets/piper18mh.jpg";
+import Discography from "./Discography";
 
 const About = () => {
   return (
     <div className="bg-[#B8B5AE]">
       <h1 className="text-4xl text-center mb-8">About Aaron</h1>
-      <div className="flex md:flex-row flex-col justify-center items-center">
-        <div className="w-full md:w-1/3 mr-10">
+      <div className="flex lg:flex-row flex-col justify-center items-center">
+        <div className="w-full md:w-1/3 mr-10 text-xl">
           <p>
             With nearly 30 years of experience, Aaron is an invaluable resource
-            in the world of bagpiping. He has competed as a solo bagpiper at the
-            grade 2 level and has been the bagpiper for the Celtic Punk band <a href="https://www.thegrinningbarretts.com/" className=""> The Grinning Barretts</a> for almost 8 years. If you're looking for a
-            versatile bagpiper, Aaron is your guy! His passion for bagpiping has
-            also led him to play the Irish whistle, where he has become a
-            sought-after performer. Together with his wife, he hosts a weekly
-            Traditional Irish Music Session in their hometown of Nanaimo, BC.
+            in the Vancouver Island bagpiping scene. He has recently competed as a solo
+            bagpiper at the grade 2 level and has been the bagpiper for the
+            Celtic Punk band{" "}
+            <a href="https://www.thegrinningbarretts.com/" className="">
+              {" "}
+              The Grinning Barretts
+            </a>{" "}
+            for almost 8 years. If you're looking for a versatile bagpiper,
+            Aaron is your guy! His passion for bagpiping has also led him to
+            play the Irish whistle, where he has become a sought-after
+            performer. Together with his wife, he hosts a weekly Traditional
+            Irish Music Session in their hometown of Nanaimo, BC.
           </p>
           <br></br>
           <p>
@@ -47,10 +54,15 @@ const About = () => {
           <img src={image1}></img>
           <div className="text-center">
             <p>Photo by: </p>
-          <a href="https://meaghanharveyphoto.com/" className=""> Meaghan Harvey Photography</a></div>
+            <a href="https://meaghanharveyphoto.com/" className="">
+              {" "}
+              Meaghan Harvey Photography
+            </a>
+          </div>
         </div>
       </div>
       <p className="text-center"></p>
+      <Discography />
     </div>
   );
 };
