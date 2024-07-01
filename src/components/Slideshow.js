@@ -20,61 +20,41 @@ import image18 from "../assets/piper18mh.jpg";
 import image19 from "../assets/piper19mh.jpg";
 import image20 from "../assets/piper20mh.jpg";
 
-const images = [
-  { src: image1, credit: "Photo by Matt Carter" },
-  { src: image2, credit: "Photo by Matt Carter" },
-  { src: image3, credit: "Photo by Matt Carter" },
-  { src: image4, credit: "Photo by Matt Carter" },
-  { src: image5, credit: "Photo by Matt Carter" },
-  { src: image6, credit: "Photo by Matt Carter" },
-  { src: image7, credit: "Photo by Matt Carter" },
-  { src: image8, credit: "Photo by Matt Carter" },
-  {
-    src: image9,
-    credit: "Photo by Finding Charlotte Photography",
+const photographers = {
+  mattCarter: { title: "Matt Carter" },
+  findingCharlotte: {
+    title: "Finding Charlotte Photography",
     link: "https://www.findingcharlotte.ca/",
   },
-  {
-    src: image10,
-    credit: "Photo by Colin Smith Takes Pics",
+  colinSmith: {
+    title: "Colin Smith Takes Pics",
     link: "https://www.colinsmithtakespics.com/home",
   },
-  {
-    src: image11,
-    credit: "Photo by Colin Smith Takes Pics",
-    link: "https://www.colinsmithtakespics.com/home",
-  },
-  {
-    src: image12,
-    credit: "Photo by Colin Smith Takes Pics",
-    link: "https://www.colinsmithtakespics.com/home",
-  },
-  {
-    src: image13,
-    credit: "Photo by Colin Smith Takes Pics",
-    link: "https://www.colinsmithtakespics.com/home",
-  },
-  { src: image14, credit: "Photo by Christine Bergen" },
-  { src: image15, credit: "Photo by Christine Bergen" },
-  { src: image16, credit: "Photo by Christine Bergen" },
-  { src: image17, credit: "Photo by Christine Bergen" },
-  {
-    src: image18,
-    credit: "Photo by Meaghan Harvey",
-    link: "https://meaghanharveyphoto.com/",
-  },
-  {
-    src: image19,
-    credit: "Photo by Meaghan Harvey",
-    link: "https://meaghanharveyphoto.com/",
-  },
-  {
-    src: image20,
-    credit: "Photo by Meaghan Harvey",
-    link: "https://meaghanharveyphoto.com/",
-  },
+  christineBergen: { title: "Christine Bergen" },
+  meaghanHarvey: { title: "Meaghan Harvey", link: "https://meaghanharveyphoto.com/" },
+};
 
-  // Add more image objects here
+const images = [
+  { src: image1, photographer: "mattCarter" },
+  { src: image2, photographer: "mattCarter" },
+  { src: image3, photographer: "mattCarter" },
+  { src: image4, photographer: "mattCarter" },
+  { src: image5, photographer: "mattCarter" },
+  { src: image6, photographer: "mattCarter" },
+  { src: image7, photographer: "mattCarter" },
+  { src: image8, photographer: "mattCarter" },
+  { src: image9, photographer: "findingCharlotte" },
+  { src: image10, photographer: "colinSmith" },
+  { src: image11, photographer: "colinSmith" },
+  { src: image12, photographer: "colinSmith" },
+  { src: image13, photographer: "colinSmith" },
+  { src: image14, photographer: "christineBergen" },
+  { src: image15, photographer: "christineBergen" },
+  { src: image16, photographer: "christineBergen" },
+  { src: image17, photographer: "christineBergen" },
+  { src: image18, photographer: "meaghanHarvey" },
+  { src: image19, photographer: "meaghanHarvey" },
+  { src: image20, photographer: "meaghanHarvey" },
 ];
 
 const Slideshow = () => {
@@ -87,41 +67,43 @@ const Slideshow = () => {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    console.log("Current Index:", currentIndex);
+    console.log("Current Image:", images[currentIndex]);
+    console.log("Current Photographer:", photographers[images[currentIndex].photographer]);
+  }, [currentIndex]);
+
+  const currentImage = images[currentIndex];
+  const photographer = photographers[currentImage.photographer];
+
   return (
     <div className="flex justify-center items-center">
       <div className="w-full h-[500px] overflow-hidden relative">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 w-full h-full flex flex-col justify-end transition-opacity duration-1000 ${
-              index === currentIndex ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <div className="flex justify-center items-center w-full h-full">
-              <img
-                src={image.src}
-                alt={`Slide ${index}`}
-                className="max-h-full object-contain"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <div className="w-3/4 md:w-2/3 mt-2 bg-black bg-opacity-50 text-white p-2 text-center ">
-                {image.link ? (
-                  <a
-                    href={image.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline"
-                  >
-                    {image.credit}
-                  </a>
-                ) : (
-                  image.credit
-                )}
-              </div>
+        <div className="absolute inset-0 w-full h-full flex flex-col justify-end transition-opacity duration-1000 opacity-100">
+          <div className="flex justify-center items-center w-full h-full">
+            <img
+              src={currentImage.src}
+              alt={`Slide ${currentIndex}`}
+              className="max-h-full object-contain"
+            />
+          </div>
+          <div className="flex justify-center items-center">
+            <div className="w-3/4 md:w-2/3 mt-2 bg-black bg-opacity-50 text-white p-2 text-center">
+              {photographer?.link ? (
+                <a
+                  href={photographer.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >Photo By:&nbsp; 
+                  {photographer.title}
+                </a>
+              ) : (
+                <span>Photo By: {photographer.title}</span>
+              )}
             </div>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );

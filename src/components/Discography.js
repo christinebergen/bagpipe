@@ -3,6 +3,7 @@ import riot from "../assets/riot.webp";
 import sauce from "../assets/PiperSauce.png";
 import paddy from "../assets/padraig.webp";
 import bottle from "../assets/tgb.webp";
+import tgblogo from "../assets/tgblogo.png";
 
 const Discography = () => {
   const albums = [
@@ -47,15 +48,14 @@ const Discography = () => {
   return (
     <section id="discography" className="py-8">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-6 text-center">Discography</h2>
+        <h2 className="text-3xl font-bold mt-6 mb-6 text-center">
+          Aaron's Discography with:
+        </h2>
+        <div className="flex justify-center items-center">
+          <img src={tgblogo} className="w-2/3 md:w-1/3"></img>
+        </div>
 
-        <p className="mb-4 text-center">
-          Here are the albums that Celtic Coast Piper Aaron Bergen has played
-          on, showcasing his versatile talent across various Celtic and musical
-          projects.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-10 md:p-20">
           {albums.map((album, index) => (
             <div
               className="album border-2 rounded-md shadow-lg p-4 flex flex-col items-center text-center"
@@ -66,19 +66,19 @@ const Discography = () => {
               <img
                 src={album.cover}
                 alt={`Cover of ${album.title}`}
-                className="w-1/3 mb-4"
+                className="w-2/3 md:w-1/3 mb-4"
               />
-              <p className="mb-2 text-xl">{album.description}</p>
+              <p className="mb-2 text-lg md:text-xl">{album.description}</p>
               <div className="flex flex-col md:flex-row">
                 <a
                   href={album.link}
-                  className="text-2xl text-blue-800 font-bold hover:underline bg-[#8E8B85] p-4 md:mr-2 rounded-md mb-4 md:mb-0"
+                  className="text-lg md:text-2xl text-blue-800 font-bold hover:underline bg-[#8E8B85] p-4 md:mr-2 rounded-md mb-4 md:mb-0"
                 >
                   Purchase the Album Here!
                 </a>
                 <a
                   href={album.listen}
-                  className="text-2xl text-blue-800 font-bold hover:underline bg-[#8E8B85] p-4 md:ml-2 rounded-md"
+                  className="text-lg md:text-2xl text-blue-800 font-bold hover:underline bg-[#8E8B85] p-4 md:ml-2 rounded-md"
                 >
                   Listen to the Album Here!
                 </a>

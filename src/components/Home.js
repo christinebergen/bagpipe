@@ -10,7 +10,7 @@ const Home = () => {
           Music Connections
         </h2>
         <div className="flex justify-center items-center">
-          <hr className="w-3/4 border-2 mt-4 mb-4 border-[#B8B5AE]"></hr>
+          <hr className="w-3/4 border-2 mt-4 mb-4 border-[#8E8B85]"></hr>
         </div>
         <p className="text-center text-md md:text-xl">
           Whether you're seeking a small Celtic musical ensemble, a Pipes and

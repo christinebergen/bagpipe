@@ -5,15 +5,15 @@ import Discography from "./Discography";
 const About = () => {
   return (
     <div className="bg-[#B8B5AE]">
-      <h1 className="text-4xl text-center mb-8">About Aaron</h1>
+      <h1 className="text-4xl text-center mt-8 mb-8">About Aaron</h1>
       <div className="flex lg:flex-row flex-col justify-center items-center">
-        <div className="w-full md:w-1/3 mr-10 text-xl">
+        <div className="w-3/4 md:w-1/3 mr-10 text-xl">
           <p>
             With nearly 30 years of experience, Aaron is an invaluable resource
             in the Vancouver Island bagpiping scene. He has recently competed as a solo
             bagpiper at the grade 2 level and has been the bagpiper for the
             Celtic Punk band{" "}
-            <a href="https://www.thegrinningbarretts.com/" className="">
+            <a href="https://www.thegrinningbarretts.com/" className="text-blue-700 underline hover:font-bold">
               {" "}
               The Grinning Barretts
             </a>{" "}
@@ -50,7 +50,7 @@ const About = () => {
             evolve.
           </p>
         </div>
-        <div className="w-1/3 ml-10">
+        <div className="w:2/3 md:w-1/3 ml-8 mr-8 md:mr-0 md:ml-10">
           <img src={image1}></img>
           <div className="text-center">
             <p>Photo by: </p>
