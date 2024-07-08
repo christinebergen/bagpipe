@@ -14,7 +14,8 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow bg-[#B8B5AE]">
+        
+        <main className="bg-medBackground dark:bg-darkBackground min-h-screen flex flex-col shadow-2xl">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

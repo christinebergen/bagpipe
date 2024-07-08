@@ -4,16 +4,16 @@ import Discography from "./Discography";
 
 const About = () => {
   return (
-    <div className="bg-[#B8B5AE]">
-      <h1 className="text-4xl text-center mt-8 mb-8">About Aaron</h1>
+    <div className="bg-medBackground dark:bg-medDarkBackground min-h-screen">
+      <h1 className="text-4xl text-center mt-8 mb-8 text-gray-800 dark:text-primaryText">About Aaron</h1>
       <div className="flex lg:flex-row flex-col justify-center items-center">
-        <div className="w-3/4 md:w-1/3 mr-10 text-xl">
+        <div className="w-3/4 md:w-1/3 mr-10 text-xl text-gray-800 dark:text-secondaryText">
           <p>
             With nearly 30 years of experience, Aaron is an invaluable resource
             in the Vancouver Island bagpiping scene. He has recently competed as a solo
             bagpiper at the grade 2 level and has been the bagpiper for the
             Celtic Punk band{" "}
-            <a href="https://www.thegrinningbarretts.com/" className="text-blue-700 underline hover:font-bold">
+            <a href="https://www.thegrinningbarretts.com/" className="text-blue-700 dark:text-accentColor underline hover:font-bold">
               {" "}
               The Grinning Barretts
             </a>{" "}
@@ -23,7 +23,7 @@ const About = () => {
             performer. Together with his wife, he hosts a weekly Traditional
             Irish Music Session in their hometown of Nanaimo, BC.
           </p>
-          <br></br>
+          <br />
           <p>
             In addition to solo competitions, Aaron has competed with pipe and
             drum bands, performed at numerous special occasions (including his
@@ -34,15 +34,14 @@ const About = () => {
             Duncan Pipes and Drums, where he enjoyed listening to the war
             veterans' stories.
           </p>
-          <br></br>
+          <br />
           <p>
             Aaron's polished playing and remarkable talent for mastering the
             bagpipes can be attributed to his instructors Carol Fowler, Bill
             Grant, Angus G. MacLeod, and James Barrie, many of whom were trained
             by legendary bagpipers in Scotland.
           </p>
-          <br></br>
-          <p></p>
+          <br />
           <p>
             Aaron has recently rekindled his passion for teaching bagpipes, a
             role he first embraced as a teenager with the Legion Pipe band. He
@@ -50,18 +49,16 @@ const About = () => {
             evolve.
           </p>
         </div>
-        <div className="w:2/3 md:w-1/3 ml-8 mr-8 md:mr-0 md:ml-10">
-          <img src={image1}></img>
-          <div className="text-center">
-            <p>Photo by: </p>
-            <a href="https://meaghanharveyphoto.com/" className="">
-              {" "}
+        <div className="w-2/3 md:w-1/3 ml-8 mr-8 md:mr-0 md:ml-10">
+          <img src={image1} alt="Aaron playing the bagpipes" />
+          <div className="text-center text-gray-800 dark:text-secondaryText">
+            <p>Photo by:</p>
+            <a href="https://meaghanharveyphoto.com/" className="text-blue-700 dark:text-accentColor underline hover:font-bold">
               Meaghan Harvey Photography
             </a>
           </div>
         </div>
       </div>
-      <p className="text-center"></p>
       <Discography />
     </div>
   );
