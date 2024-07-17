@@ -15,7 +15,7 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <Header />
         
-        <main className="bg-medBackground dark:bg-darkBackground min-h-screen flex flex-col shadow-2xl">
+        <main className="bg-medBackground dark:bg-medDarkBackground min-h-screen flex flex-col shadow-2xl">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

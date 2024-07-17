@@ -88,7 +88,7 @@ const Slideshow = () => {
             />
           </div>
           <div className="flex justify-center items-center">
-            <div className="w-3/4 md:w-2/3 mt-2 bg-black bg-opacity-50 text-white p-2 text-center">
+            <div className="w-3/4 md:w-1/2 mt-2 text-lg text-white dark:text-accentColor font-bold p-2 text-center">
               {photographer?.link ? (
                 <a
                   href={photographer.link}

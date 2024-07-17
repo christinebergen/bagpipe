@@ -4,7 +4,7 @@ import Slideshow from "./Slideshow";
 const Home = () => {
   return (
     <div className="container mx-auto p-4 mb-8">
-      <div className="bg-lightBackground dark:bg-medDarkBackground shadow-md dark:shadow-lg rounded-md p-10 mb-8">
+      <div className="bg-lightBackground dark:bg-darkBackground shadow-md dark:shadow-lg rounded-md p-10 mb-8">
         <h2 className="text-2xl md:text-4xl text-center mb-4 font-bold text-gray-800 dark:text-white">
           Celtic Sounds of Nanaimo: Bagpiper for Hire, Expert Instruction, and
           Music Connections
