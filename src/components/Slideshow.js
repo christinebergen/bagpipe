@@ -18,7 +18,6 @@ import image16 from "../assets/piper16.jpg";
 import image17 from "../assets/piper17.jpg";
 import image18 from "../assets/piper18mh.jpg";
 import image19 from "../assets/piper19mh.jpg";
-import image20 from "../assets/piper20mh.jpg";
 
 const photographers = {
   mattCarter: { title: "Matt Carter" },
@@ -54,7 +53,7 @@ const images = [
   { src: image17, photographer: "christineBergen" },
   { src: image18, photographer: "meaghanHarvey" },
   { src: image19, photographer: "meaghanHarvey" },
-  { src: image20, photographer: "meaghanHarvey" },
+  
 ];
 
 const Slideshow = () => {
