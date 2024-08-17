@@ -7,14 +7,14 @@ const Contact = () => {
   return (
     <div className="bg-medBackground dark:bg-medDarkBackground min-h-screen">
       <h1 className="text-4xl text-center mt-8 mb-8 text-gray-800 dark:text-primaryText">
-        Contact Me
+        Contact Aaron
       </h1>
       <div className="flex justify-center items-center">
         <div className="w-3/4 md:w-2/3 lg:w-1/2 text-gray-800 dark:text-secondaryText text-center">
           <p className="text-xl mb-8">
-            We're here to help! Whether you have questions about our lessons,
+            Aaron is here to help! Whether you have questions about his lessons,
             services, or availability, feel free to reach out. You can contact
-            us via the methods below, and we'll get back to you as soon as
+            him via the methods below, and he will get back to you as soon as
             possible.
           </p>
           <div className="bg-lightBackground shadow-2xl dark:bg-darkBackground rounded-lg px-8 pt-6 pb-8 mb-4">
@@ -25,7 +25,7 @@ const Contact = () => {
               <img src={email} alt="Facebook" className="w-12 h-12 md:mr-8" />
               <a
                 href="mailto:aaron.bergen@telus.net"
-                className="text-blue-700 dark:text-accentColor underline hover:font-bold"
+                className="text-blue-700 text-2xl dark:text-accentColor underline hover:font-bold"
               >
                 aaron.bergen@telus.net
               </a>
@@ -36,14 +36,14 @@ const Contact = () => {
             </p>
 
             <div className="flex flex-row justify-center">
-              <a
+              {/* <a
                 href="https://www.facebook.com/aaron.bergen.90"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center w-16 h-16 justify-center "
               >
                 <img src={facebook} alt="Facebook" className="w-12 h-12" />
-              </a>
+              </a> */}
 
               <a
                 href="https://www.instagram.com/piper_bergen/"

@@ -17,7 +17,7 @@ const Hire = () => {
               Aaron is available for solo performances at various events,
               including weddings, funerals, corporate events, and private
               parties. With a wide repertoire and a deep passion for bagpiping,
-              [Instructor's Name] will add a unique and memorable touch to your
+              Aaron will add a unique and memorable touch to your
               event.
             </p>
           </Fade>

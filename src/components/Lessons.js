@@ -20,6 +20,12 @@ const Lessons = () => {
             </p>
             <ul className="list-disc list-inside ml-4 mb-6">
               <li>
+                <strong>Starting with the Chanter:</strong> All bagpipers start
+                by learning on a practice chanter, and once they are comfortable
+                with the basics of playing a chanter, will move up to a full set
+                of bagpipes with drones.
+              </li>
+              <li>
                 <strong>Basic Music Theory:</strong> Understanding the musical
                 notes and rhythms used in bagpiping.
               </li>
@@ -93,6 +99,35 @@ const Lessons = () => {
               <hr className="w-3/4 md:w-full border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor"></hr>
             </div>
           </Fade>
+
+          <Fade cascade damping={0.1} triggerOnce>
+            <h2 className="text-4xl text-center mb-4">
+              Competition Preparation:
+            </h2>
+            <ul className="list-disc list-inside ml-4 mb-6">
+              <li>
+                <strong>Learn the ropes of the Highland Games:</strong> From
+                etiquiette to proper dress, Aaron can help you prepare to put on
+                the best show possible.
+              </li>
+              <li>
+                <strong>Competition Levels:</strong> From chanter players up to
+                professionals, all levels of players are invited to compete at
+                Highland Games Events. There are multiple opportunities to
+                compete each year in the Pacific North West.
+              </li>
+              <li>
+                <strong>Further Improvement:</strong>
+                This is a great way to find the motivation to further your
+                skills and have a goal to work towards. Competition can be a
+                fulfilling yet challenging experience that can push your limits
+                and take your playing to a level you never thought possible.
+              </li>
+            </ul>
+            <div className="flex justify-center items-center">
+              <hr className="w-3/4 md:w-full border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor"></hr>
+            </div>
+          </Fade>
           <Fade cascade damping={0.1} triggerOnce>
             <h2 className="text-4xl text-center mb-4">
               Why Choose Celtic Coast Bagpiper Aaron?
@@ -115,7 +150,6 @@ const Lessons = () => {
                 encouraging atmosphere to foster your growth as a musician.
               </li>
             </ul>
-
             <p className="text-center text-2xl font-bold pt-8">
               Ready to start your bagpipe journey or take your skills to new
               heights? Contact Aaron today to schedule your first lesson!
@@ -125,7 +159,11 @@ const Lessons = () => {
         <Fade cascade damping={0.1} triggerOnce>
           <div className="w-full flex justify-center mt-20 mb-20">
             <div className="w-2/3 md:w-1/3">
-              <img src={image1} alt="Aaron playing the bagpipes" className="w-full" />
+              <img
+                src={image1}
+                alt="Aaron playing the bagpipes"
+                className="w-full"
+              />
               <p className="text-center text-gray-800 dark:text-accentColor text-lg font-bold">
                 Photo By: Matt Carter
               </p>
