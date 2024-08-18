@@ -21,7 +21,7 @@ const Header = () => {
 
   const getLinkClass = (path) => {
     return location.pathname === path
-      ? 'font-bold underline' // Active link color
+      ? 'font-bold underline dark:text-white' // Active link color
       : 'text-gray-800 hover:text-white dark:text-white';
   };
 

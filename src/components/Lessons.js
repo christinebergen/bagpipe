@@ -1,6 +1,10 @@
 import React from "react";
 import image1 from "../assets/piper2mc.jpg";
 import { Fade } from "react-awesome-reveal";
+import skye from "../assets/skye.png";
+import mairi from "../assets/mairi.png";
+import piper1 from "../assets/piper21.jpg";
+import atholl from "../assets/atholl.png";
 
 const Lessons = () => {
   return (
@@ -10,30 +14,33 @@ const Lessons = () => {
           Bagpipe Lessons with Piper Aaron
         </h1>
       </Fade>
+      <div className="flex justify-center items-center">
+        <hr className="w-3/4 border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor mt-12 mb-12"></hr>
+      </div>
       <div className="flex flex-col justify-center items-center">
         <div className="w-3/4 md:w-2/3 lg:w-1/2 text-xl text-gray-800 dark:text-secondaryText">
           <Fade cascade damping={0.1} triggerOnce>
             <h2 className="text-4xl text-center mb-4">Beginner Lessons</h2>
-            <p>
+            <p className="mb-2">
               Are you new to the world of bagpipes? Our beginner lessons will
               introduce you to the fundamentals, including:
             </p>
             <ul className="list-disc list-inside ml-4 mb-6">
-              <li>
+              <li className="mb-2">
                 <strong>Starting with the Chanter:</strong> All bagpipers start
-                by learning on a practice chanter, and once they are comfortable
+                by learning on a practice chanter. Once they are comfortable
                 with the basics of playing a chanter, will move up to a full set
                 of bagpipes with drones.
               </li>
-              <li>
+              <li className="mb-2">
                 <strong>Basic Music Theory:</strong> Understanding the musical
                 notes and rhythms used in bagpiping.
               </li>
-              <li>
+              <li className="mb-2">
                 <strong>Instrument Familiarization:</strong> Learning about the
                 parts of the bagpipe and how they work together.
               </li>
-              <li>
+              <li className="mb-2">
                 <strong>Basic Techniques:</strong> Mastering the essential
                 finger movements and blowing techniques.
               </li>
@@ -43,25 +50,35 @@ const Lessons = () => {
               </li>
             </ul>
             <div className="flex justify-center items-center">
-              <hr className="w-3/4 md:w-full border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor"></hr>
+              <hr className="w-3/4 md:w-full border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor mt-12 mb-12"></hr>
             </div>
           </Fade>
           <Fade cascade damping={0.1} triggerOnce>
+            <div className="flex items-center justify-center">
+              <img
+                src={skye}
+                className="w-full md:w-3/4 rounded-lg border-2 border-linkBackground"
+                alt="a picture of the bagpipe sheet music for The Skye Boat Song"
+              ></img>
+            </div>
+            <div className="flex justify-center items-center">
+              <hr className="w-3/4 md:w-full border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor mt-12 mb-12"></hr>
+            </div>
             <h2 className="text-4xl text-center mb-4">Intermediate Lessons</h2>
-            <p>
+            <p className="mb-2">
               For those with some experience, our intermediate lessons focus on
               improving your skills and expanding your repertoire:
             </p>
             <ul className="list-disc list-inside ml-4 mb-6">
-              <li>
+              <li className="mb-2">
                 <strong>Advanced Fingering Techniques:</strong> Enhancing your
                 dexterity and speed.
               </li>
-              <li>
+              <li className="mb-2">
                 <strong>Complex Tunes:</strong> Learning more intricate melodies
                 and expanding your musical range.
               </li>
-              <li>
+              <li className="mb-2">
                 <strong>Maintenance and Tuning:</strong> Understanding how to
                 maintain your bagpipe and keep it in tune for optimal
                 performance.
@@ -71,52 +88,63 @@ const Lessons = () => {
                 playing confidently in front of an audience.
               </li>
             </ul>
-            <div className="flex justify-center items-center">
-              <hr className="w-3/4 md:w-full border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor"></hr>
-            </div>
           </Fade>
           <Fade cascade damping={0.1} triggerOnce>
+            <div className="flex justify-center items-center">
+              <hr className="w-3/4 md:w-full border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor mt-12 mb-12"></hr>
+            </div>
+            <div className="flex items-center justify-center">
+              <img
+                src={atholl}
+                className="w-full md:w-3/4 rounded-lg border-2 border-linkBackground"
+                alt="a picture of Aaron standing in a grassy field of a highland games competition playing the bagpipes"
+              ></img>
+            </div>
+            <div className="flex justify-center items-center">
+              <hr className="w-3/4 md:w-full border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor mt-12 mb-12"></hr>
+            </div>
             <h2 className="text-4xl text-center mb-4">Advanced Lessons</h2>
-            <p>
+            <p className="mb-2">
               Experienced pipers can take their playing to the next level with
               our advanced lessons:
             </p>
             <ul className="list-disc list-inside ml-4 mb-6">
-              <li>
+              <li className="mb-2">
                 <strong>Composition and Arrangement:</strong> Creating your own
                 tunes and arrangements.
               </li>
-              <li>
+              <li className="mb-2">
                 <strong>Competitive Piping:</strong> Preparing for competitions
                 with advanced strategies and performance critiques.
               </li>
-              <li>
+              <li >
                 <strong>Collaborative Music:</strong> Playing with other
                 musicians, including participation in a Celtic punk band.
               </li>
             </ul>
-            <div className="flex justify-center items-center">
-              <hr className="w-3/4 md:w-full border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor"></hr>
-            </div>
           </Fade>
 
           <Fade cascade damping={0.1} triggerOnce>
+            <div className="flex justify-center items-center">
+              <hr className="w-3/4 md:w-full border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor mt-12 mb-12"></hr>
+            </div>
+
             <h2 className="text-4xl text-center mb-4">
               Competition Preparation:
             </h2>
             <ul className="list-disc list-inside ml-4 mb-6">
-              <li>
+              <li className="mb-2">
                 <strong>Learn the ropes of the Highland Games:</strong> From
                 etiquiette to proper dress, Aaron can help you prepare to put on
                 the best show possible.
               </li>
-              <li>
+              <li className="mb-2">
                 <strong>Competition Levels:</strong> From chanter players up to
                 professionals, all levels of players are invited to compete at
                 Highland Games Events. There are multiple opportunities to
                 compete each year in the Pacific North West.
               </li>
-              <li>
+              <li className="mb-2">
                 <strong>Further Improvement:</strong>
                 This is a great way to find the motivation to further your
                 skills and have a goal to work towards. Competition can be a
@@ -127,25 +155,35 @@ const Lessons = () => {
             <div className="flex justify-center items-center">
               <hr className="w-3/4 md:w-full border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor"></hr>
             </div>
+            <div className="flex items-center justify-center">
+              <img
+                src={piper1}
+                className="w-2/3 md:w-1/3 rounded-lg border-2 border-linkBackground"
+                alt="a picture of Aaron standing in a grassy field of a highland games competition playing the bagpipes"
+              ></img>
+            </div>
+            <div className="flex justify-center items-center">
+              <hr className="w-3/4 md:w-full border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor mt-12 mb-12"></hr>
+            </div>
           </Fade>
           <Fade cascade damping={0.1} triggerOnce>
             <h2 className="text-4xl text-center mb-4">
               Why Choose Celtic Coast Bagpiper Aaron?
             </h2>
             <ul className="list-disc list-inside ml-4 mb-6">
-              <li>
+              <li className="mb-2">
                 <strong>Personalized Instruction:</strong> Lessons are
                 customized to fit your learning style and pace.
               </li>
-              <li>
+              <li className="mb-2">
                 <strong>Experienced Teacher:</strong> Aaron has years of
                 experience both teaching and performing.
               </li>
-              <li>
+              <li className="mb-2">
                 <strong>Flexible Scheduling:</strong> Convenient lesson times to
                 fit your busy schedule.
               </li>
-              <li>
+              <li className="mb-2">
                 <strong>Supportive Environment:</strong> A positive and
                 encouraging atmosphere to foster your growth as a musician.
               </li>
@@ -162,7 +200,7 @@ const Lessons = () => {
               <img
                 src={image1}
                 alt="Aaron playing the bagpipes"
-                className="w-full"
+                className="w-full border-2 border-linkBackground rounded-lg"
               />
               <p className="text-center text-gray-800 dark:text-accentColor text-lg font-bold">
                 Photo By: Matt Carter

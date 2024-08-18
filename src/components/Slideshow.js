@@ -83,11 +83,11 @@ const Slideshow = () => {
             <img
               src={currentImage.src}
               alt={`Slide ${currentIndex}`}
-              className="max-h-full object-contain"
+              className="max-h-full object-contain border-2 border-linkBackground rounded-lg"
             />
           </div>
           <div className="flex justify-center items-center">
-            <div className="w-3/4 md:w-1/2 mt-2 text-lg text-white dark:text-accentColor font-bold p-2 text-center">
+            <div className="w-3/4 md:w-1/2 mt-2 text-lg text-gray-800 dark:text-accentColor font-bold p-2 text-center">
               {photographer?.link ? (
                 <a
                   href={photographer.link}

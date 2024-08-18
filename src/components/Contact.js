@@ -10,6 +10,9 @@ const Contact = () => {
         Contact Aaron
       </h1>
       <div className="flex justify-center items-center">
+        <hr className="w-3/4 border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor mt-12 mb-12"></hr>
+      </div>
+      <div className="flex justify-center items-center">
         <div className="w-3/4 md:w-2/3 lg:w-1/2 text-gray-800 dark:text-secondaryText text-center">
           <p className="text-xl mb-8">
             Aaron is here to help! Whether you have questions about his lessons,
@@ -32,7 +35,9 @@ const Contact = () => {
             </div>
 
             <p className="mb-4">
-              <strong className="text-2xl mb-4 text-gray-800 dark:text-primaryText">Social Media:</strong>
+              <strong className="text-2xl mb-4 text-gray-800 dark:text-primaryText">
+                Social Media:
+              </strong>
             </p>
 
             <div className="flex flex-row justify-center">

@@ -1,27 +1,36 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+
+  const getLinkClass = (path) => {
+    return location.pathname === path
+      ? 'font-bold underline dark:text-white' // Active link color
+      : 'text-gray-800 hover:text-gray-600 dark:text-white';
+  };
+
+
   return (
     <footer className="bg-lightBackground dark:bg-darkBackground py-4 dark:shadow-lg pt-10">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4">
         <div id="footer" className="text-center md:text-left lg:pl-10">
           <p className="text-gray-800 text-2xl dark:text-white">&copy; 2024 Celtic Coast Bagpiper</p>
         </div>
-        <div className="flex flex-col text-2xl md:flex-row space-y-2 md:space-y-0 md:space-x-4 lg:pr-10">
-          <Link className="text-gray-800 hover:text-white dark:text-white dark:hover:text-gray-400" to="/">
+        <div className="flex flex-wrap md:flex-row justify-center items-center text-2xl flex-row gap-4 lg:pr-10">
+          <Link className={getLinkClass('/')} to="/">
             Home
           </Link>
-          <Link className="text-gray-800 hover:text-white dark:text-white dark:hover:text-gray-400" to="/about">
+          <Link className={getLinkClass('/about')} to="/about">
             About
           </Link>
-          <Link className="text-gray-800 hover:text-white dark:text-white dark:hover:text-gray-400" to="/lessons">
+          <Link className={getLinkClass('/lessons')} to="/lessons">
             Lessons
           </Link>
-          <Link className="text-gray-800 hover:text-white dark:text-white dark:hover:text-gray-400" to="/hire">
+          <Link className={getLinkClass('/hire')} to="/hire">
             Hire for Events
           </Link>
-          <Link className="text-gray-800 hover:text-white dark:text-white dark:hover:text-gray-400" to="/contact">
+          <Link className={getLinkClass('/contact')} to="/contact">
             Contact
           </Link>
         </div>
