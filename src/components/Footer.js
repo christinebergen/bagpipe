@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="flex justify-center">
         <div className="w-full md:w-2/3 text-center">
           <p className="italic">
-            We respectfully acknowledge that we live, work, and play on the
+            Aaron respectfully acknowledges that he lives, works, and plays on the
             traditional and unceded territories of the Coast Salish peoples,
             including the territories of the Snuneymuxw, Snaw-naw-as, and
             Stzuminus First Nations.
