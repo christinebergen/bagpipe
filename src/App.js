@@ -8,13 +8,12 @@ import Lessons from "./components/Lessons";
 import Contact from "./components/Contact";
 import Hire from "./components/Hire";
 
-
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
         <Header />
-        
+
         <main className="bg-medBackground dark:bg-medDarkBackground min-h-screen flex flex-col shadow-2xl">
           <Routes>
             <Route path="/" element={<Home />} />
