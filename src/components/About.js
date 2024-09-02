@@ -21,10 +21,10 @@ const About = () => {
               <div className="float-right w-full md:w-1/3  mb-4">
                 <img
                   src={image1}
-                  className="rounded-lg border-2 border-linkBackground"
+                  className="rounded-lg border-2 border-linkBackground md:ml-4"
                   alt="Aaron dressed in a formal bagpiping outfit holding the great highland bagpipes"
                 />
-                <div className="text-center text-lg text-gray-800 dark:text-secondaryText mt-2">
+                <div className="text-center text-lg text-gray-800 dark:text-secondaryText mt-2 ">
                   <p>Photo by:</p>
                   <a
                     href="https://meaghanharveyphoto.com/"

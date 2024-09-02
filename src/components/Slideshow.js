@@ -77,28 +77,28 @@ const Slideshow = () => {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="w-full h-[500px] overflow-hidden relative">
-        <div className="absolute inset-0 w-full h-full flex flex-col justify-end transition-opacity duration-1000 opacity-100">
-          <div className="flex justify-center items-center w-full h-full">
+      <div className="w-full h-[500px] relative">
+        <div className="absolute inset-0 w-full h-full flex flex-col justify-center items-center transition-opacity duration-1000">
+          <div className="relative w-full h-full flex justify-center items-center mt-4">
             <img
               src={currentImage.src}
               alt={`Slide ${currentIndex}`}
-              className="max-h-full object-contain border-2 border-linkBackground rounded-lg"
+              className="max-h-full max-w-full object-contain border-2 border-linkBackground rounded-lg"
             />
           </div>
           <div className="flex justify-center items-center">
-            <div className="w-3/4 md:w-1/2 mt-2 text-lg text-gray-800 dark:text-accentColor font-bold p-2 text-center">
+            <div className="mt-2 text-lg text-gray-800 dark:text-accentColor font-bold p-2 text-center">
               {photographer?.link ? (
                 <a
                   href={photographer.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline"
-                >Photo By:&nbsp; 
-                  {photographer.title}
+                >
+                  Photo By:&nbsp;{photographer.title}
                 </a>
               ) : (
-                <span>Photo By: {photographer.title}</span>
+                <p>Photo By: {photographer.title}</p>
               )}
             </div>
           </div>
@@ -109,3 +109,5 @@ const Slideshow = () => {
 };
 
 export default Slideshow;
+
+

@@ -2,6 +2,8 @@ import React from "react";
 import facebook from "../assets/facebook.png";
 import insta from "../assets/insta.png";
 import email from "../assets/email.png";
+import gig from "../assets/gig.png"
+
 
 const Contact = () => {
   return (
@@ -33,6 +35,20 @@ const Contact = () => {
                 aaron.bergen@telus.net
               </a>
             </div>
+            
+            <p className="mb-4">
+              <strong className="text-2xl mb-4 text-gray-800 dark:text-primaryText">
+                Contact Aaron on Gig Salad:
+              </strong>
+            </p>
+            <a
+                href="https://www.gigsalad.com/aaron_bergen_nanaimo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center mb-4"
+              >
+                <img src={gig} alt="gig salad icon" className="w-12 h-12 rounded-3xl" />
+              </a>
 
             <p className="mb-4">
               <strong className="text-2xl mb-4 text-gray-800 dark:text-primaryText">
