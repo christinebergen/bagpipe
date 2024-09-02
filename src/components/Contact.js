@@ -2,8 +2,8 @@ import React from "react";
 import facebook from "../assets/facebook.png";
 import insta from "../assets/insta.png";
 import email from "../assets/email.png";
-import gig from "../assets/gig.png"
-
+import gig from "../assets/gig.png";
+import darkemail from "../assets/emaildark.png";
 
 const Contact = () => {
   return (
@@ -24,10 +24,19 @@ const Contact = () => {
           </p>
           <div className="bg-lightBackground shadow-2xl dark:bg-darkBackground rounded-lg px-8 pt-6 pb-8 mb-4">
             <h2 className="text-2xl mb-4 mt-4 text-gray-800 dark:text-primaryText font-bold">
-              Contact Information
+              E-mail:
             </h2>
             <div className="flex flex-col md:flex-row items-center justify-center md:mb-8">
-              <img src={email} alt="Facebook" className="w-12 h-12 md:mr-8" />
+              <img
+                src={email}
+                alt="Email icon"
+                className="w-12 h-12 md:mr-8 dark:hidden"
+              />
+              <img
+                src={darkemail}
+                alt="Email icon"
+                className="w-12 h-12 md:mr-8 hidden dark:block"
+              />
               <a
                 href="mailto:aaron.bergen@telus.net"
                 className="text-blue-700 text-2xl dark:text-accentColor underline hover:font-bold"
@@ -35,20 +44,24 @@ const Contact = () => {
                 aaron.bergen@telus.net
               </a>
             </div>
-            
+
             <p className="mb-4">
               <strong className="text-2xl mb-4 text-gray-800 dark:text-primaryText">
                 Contact Aaron on Gig Salad:
               </strong>
             </p>
             <a
-                href="https://www.gigsalad.com/aaron_bergen_nanaimo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center mb-4"
-              >
-                <img src={gig} alt="gig salad icon" className="w-12 h-12 rounded-3xl" />
-              </a>
+              href="https://www.gigsalad.com/aaron_bergen_nanaimo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center mb-4"
+            >
+              <img
+                src={gig}
+                alt="gig salad icon"
+                className="w-12 h-12 rounded-3xl"
+              />
+            </a>
 
             <p className="mb-4">
               <strong className="text-2xl mb-4 text-gray-800 dark:text-primaryText">
