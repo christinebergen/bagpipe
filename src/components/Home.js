@@ -5,6 +5,7 @@ import Divider from "../components/Divider";
 import celtic1 from "../assets/celtic1.webp";
 import email from "../assets/email.png";
 import skye from "../assets/skye.png";
+import darkemail from "../assets/emaildark.png"
 
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
       </div>
       <Slideshow />
 
-      <div className="flex flex-col md:flex-row m-10 md:m-20 gap-8">
+      <div className="flex flex-col md:flex-row mt-10 mr-2 ml-2 md:m-20 gap-8">
         <a
           href="/about"
           className="border-2 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
@@ -39,7 +40,7 @@ const Home = () => {
             About Aaron
           </h1>
 
-          <p className="text-center text-md md:text-xl text-gray-800 dark:text-white mt-4">
+          <p className="text-center text-sm md:text-xl text-gray-800 dark:text-white mt-4">
             Discover Aaron's journey and learn how his passion, experience, and
             dedication have shaped his path. Click here to explore his story
           </p>
@@ -62,7 +63,7 @@ const Home = () => {
           </p>
         </a>
       </div>
-      <div className="flex flex-col md:flex-row m-10 md:m-20 gap-8">
+      <div className="flex flex-col md:flex-row m-2 md:m-20 gap-8">
         <a
           href="/lessons"
           className="border-2 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
@@ -87,7 +88,8 @@ const Home = () => {
           href="/contact"
           className="border-2 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
         >
-          <img src={email} className="w-2/3 md:w-1/4 h-auto" />
+          <img src={email} className="w-1/4 h-auto dark:hidden" />
+          <img src={darkemail} className="w-1/4 h-auto hidden dark:block"></img>
           <h1 className="text-4xl text-center mt-8 text-gray-800 dark:text-primaryText">
             Contact Aaron
           </h1>

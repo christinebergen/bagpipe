@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="bg-lightBackground dark:bg-darkBackground py-4 dark:shadow-lg pt-10">
       <div className="flex justify-center">
         <div className="w-full md:w-2/3 text-center">
-          <p className="italic">
+          <p className="italic text-gray-800 dark:text-white">
             Aaron respectfully acknowledges that he lives, works, and plays on the
             traditional and unceded territories of the Coast Salish peoples,
             including the territories of the Snuneymuxw, Snaw-naw-as, and
