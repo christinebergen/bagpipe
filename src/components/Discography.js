@@ -25,6 +25,7 @@ const Discography = () => {
           allowFullScreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
+          title="The Grinning barretts first full-length album"
         ></iframe>
       ),
     },
@@ -45,6 +46,7 @@ const Discography = () => {
           allowFullScreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
+          title="Hope Like Hell - EP"
         ></iframe>
       ),
     },
@@ -65,6 +67,7 @@ const Discography = () => {
           allowFullScreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
+          title="The Riot EP"
         ></iframe>
       ),
     },
@@ -85,6 +88,7 @@ const Discography = () => {
           allowFullScreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
+          title="St. Padraig's EP"
         ></iframe>
       ),
     },
@@ -129,7 +133,11 @@ const Discography = () => {
                 <hr className="w-3/4  border-2 mt-4 mb-8 border-gray-600 dark:border-borderColor mt-8"></hr>
                 <div className="flex flex-col justify-center items-center mb-10 bg-linkBackground dark:bg-borderColor rounded-md">
                   <div className="w-auto">
-                    <img src={turntable} className="w-20"></img>
+                    <img
+                      src={turntable}
+                      alt="a turntable"
+                      className="w-20"
+                    ></img>
                   </div>
                   <div className="">
                     <a

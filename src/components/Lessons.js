@@ -2,7 +2,7 @@ import React from "react";
 import image1 from "../assets/piper2mc.jpg";
 import { Fade } from "react-awesome-reveal";
 import skye from "../assets/skye.png";
-import mairi from "../assets/mairi.png";
+
 import piper1 from "../assets/piper21.jpg";
 import atholl from "../assets/atholl.png";
 
@@ -58,7 +58,7 @@ const Lessons = () => {
               <img
                 src={skye}
                 className="w-full md:w-3/4 rounded-lg border-2 border-linkBackground"
-                alt="a picture of the bagpipe sheet music for The Skye Boat Song"
+                alt="the bagpipe sheet music for The Skye Boat Song"
               ></img>
             </div>
             <div className="flex justify-center items-center">
@@ -97,7 +97,7 @@ const Lessons = () => {
               <img
                 src={atholl}
                 className="w-full md:w-3/4 rounded-lg border-2 border-linkBackground"
-                alt="a picture of Aaron standing in a grassy field of a highland games competition playing the bagpipes"
+                alt="Aaron standing in a grassy field of a highland games competition playing the bagpipes"
               ></img>
             </div>
             <div className="flex justify-center items-center">
@@ -159,7 +159,7 @@ const Lessons = () => {
               <img
                 src={piper1}
                 className="w-2/3 md:w-1/3 rounded-lg border-2 border-linkBackground"
-                alt="a picture of Aaron standing in a grassy field of a highland games competition playing the bagpipes"
+                alt="Aaron standing in a grassy field of a highland games competition playing the bagpipes"
               ></img>
             </div>
             <div className="flex justify-center items-center">

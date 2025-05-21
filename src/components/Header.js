@@ -9,20 +9,22 @@ const Header = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const darkModeEnabled = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const darkModeEnabled = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
     if (darkModeEnabled) {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
       setIsDarkMode(true);
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
       setIsDarkMode(false);
     }
   }, []);
 
   const getLinkClass = (path) => {
     return location.pathname === path
-      ? 'font-bold underline dark:text-white' // Active link color
-      : 'text-gray-800 hover:text-white dark:text-white';
+      ? "font-bold underline dark:text-white" // Active link color
+      : "text-gray-800 hover:text-white dark:text-white";
   };
 
   return (
@@ -41,19 +43,19 @@ const Header = () => {
           </h1>
         </div>
         <div className="hidden md:flex md:text-2xl space-x-4">
-          <Link className={getLinkClass('/')} to="/">
+          <Link className={getLinkClass("/")} to="/">
             Home
           </Link>
-          <Link className={getLinkClass('/about')} to="/about">
+          <Link className={getLinkClass("/about")} to="/about">
             About
           </Link>
-          <Link className={getLinkClass('/lessons')} to="/lessons">
+          <Link className={getLinkClass("/lessons")} to="/lessons">
             Lessons
           </Link>
-          <Link className={getLinkClass('/hire')} to="/hire">
+          <Link className={getLinkClass("/hire")} to="/hire">
             Hire for Events
           </Link>
-          <Link className={getLinkClass('/contact')} to="/contact">
+          <Link className={getLinkClass("/contact")} to="/contact">
             Contact
           </Link>
         </div>
@@ -90,21 +92,45 @@ const Header = () => {
         </div>
       </div>
 
-      <div className={`${isOpen ? "block" : "hidden"} md:hidden bg-lightBackground dark:bg-darkBackground`}>
+      <div
+        className={`${
+          isOpen ? "block" : "hidden"
+        } md:hidden bg-lightBackground dark:bg-darkBackground`}
+      >
         <div className="flex flex-col items-start p-4 space-y-2">
-          <Link className={getLinkClass('/')} to="/" onClick={() => setIsOpen(false)}>
+          <Link
+            className={getLinkClass("/")}
+            to="/"
+            onClick={() => setIsOpen(false)}
+          >
             Home
           </Link>
-          <Link className={getLinkClass('/about')} to="/about" onClick={() => setIsOpen(false)}>
+          <Link
+            className={getLinkClass("/about")}
+            to="/about"
+            onClick={() => setIsOpen(false)}
+          >
             About
           </Link>
-          <Link className={getLinkClass('/lessons')} to="/lessons" onClick={() => setIsOpen(false)}>
+          <Link
+            className={getLinkClass("/lessons")}
+            to="/lessons"
+            onClick={() => setIsOpen(false)}
+          >
             Lessons
           </Link>
-          <Link className={getLinkClass('/hire')} to="/hire" onClick={() => setIsOpen(false)}>
+          <Link
+            className={getLinkClass("/hire")}
+            to="/hire"
+            onClick={() => setIsOpen(false)}
+          >
             Hire for Events
           </Link>
-          <Link className={getLinkClass('/contact')} to="/contact" onClick={() => setIsOpen(false)}>
+          <Link
+            className={getLinkClass("/contact")}
+            to="/contact"
+            onClick={() => setIsOpen(false)}
+          >
             Contact
           </Link>
         </div>
@@ -114,6 +140,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-

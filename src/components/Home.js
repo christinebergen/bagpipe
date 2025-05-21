@@ -1,7 +1,7 @@
 import React from "react";
 import Slideshow from "./Slideshow";
 import image1 from "../assets/piper18mh.jpg";
-import Divider from "../components/Divider";
+
 import celtic1 from "../assets/celtic1.webp";
 import email from "../assets/email.png";
 import skye from "../assets/skye.png";
@@ -12,7 +12,10 @@ const Home = () => {
     <div className="container mx-auto p-4 mb-8">
       <div className="flex flex-col justify-center items-center">
         <div className=" bg-lightBackground dark:bg-darkBackground shadow-md dark:shadow-lg rounded-md p-10 md:m-20 mb-8">
-          <h2 className="text-2xl md:text-4xl text-center mb-4 font-bold text-gray-800 dark:text-white">
+          <h2
+            className="text-2xl md:text-4xl text-center mb-4 text-gray-800 dark:text-white"
+            id="footer"
+          >
             Celtic Sounds of Nanaimo: Musician for Hire & Expert Instruction
           </h2>
           <div className="flex justify-center items-center">
@@ -35,6 +38,7 @@ const Home = () => {
         >
           <img
             src={image1}
+            alt="Aaron dressed up in formal attire - black vest and jacket with a kilt and sporran. He's holding bagpipes"
             className="w-2/3 md:w-1/4 h-auto border-2 border-linkBackground rounded-lg"
           />
           <h1 className="text-4xl text-center mt-8 text-gray-800 dark:text-primaryText">
@@ -51,7 +55,11 @@ const Home = () => {
           href="/hire"
           className="border-2 hover:border-4 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
         >
-          <img src={celtic1} className="w-2/3 md:w-1/3 h-auto rounded-lg" />
+          <img
+            src={celtic1}
+            alt="a colourful celtic design with different tartans around the outside and a treble clef and music notes in the middle"
+            className="w-2/3 md:w-1/3 h-auto rounded-lg"
+          />
           <h1 className="text-4xl text-center mt-8 text-gray-800 dark:text-primaryText">
             Hire Aaron
           </h1>
@@ -71,6 +79,7 @@ const Home = () => {
         >
           <img
             src={skye}
+            alt="bagpipe sheet music for the skye boat song"
             className="w-2/3 md:w-1/3 h-auto mt-4 border-2 border-linkBackground rounded-lg"
           />
           <h1 className="text-4xl text-center mt-8 text-gray-800 dark:text-primaryText">
@@ -89,8 +98,16 @@ const Home = () => {
           href="/contact"
           className="border-2 hover:border-4 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
         >
-          <img src={email} className="w-1/4 h-auto dark:hidden" />
-          <img src={darkemail} className="w-1/4 h-auto hidden dark:block"></img>
+          <img
+            src={email}
+            alt="a white envelope"
+            className="w-1/4 h-auto dark:hidden"
+          />
+          <img
+            src={darkemail}
+            alt="a black envelope"
+            className="w-1/4 h-auto hidden dark:block"
+          ></img>
           <h1 className="text-4xl text-center mt-8 text-gray-800 dark:text-primaryText">
             Contact Aaron
           </h1>

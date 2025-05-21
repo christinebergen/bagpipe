@@ -1,5 +1,5 @@
 import React from "react";
-import facebook from "../assets/facebook.png";
+
 import insta from "../assets/insta.png";
 import email from "../assets/email.png";
 import gig from "../assets/gig.png";

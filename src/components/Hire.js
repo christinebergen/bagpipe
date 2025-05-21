@@ -62,7 +62,7 @@ const Hire = () => {
             <div className="flex flex-col justify-center items-center">
               <img
                 src={band}
-                alt="an image of a pipe and drum band walking down a pathway"
+                alt="a pipe and drum band walking down a pathway"
                 className="w-full md:w-3/4 border-2 border-linkBackground rounded-lg"
               ></img>
               <p className="text-gray-800 dark:text-accentColor">
@@ -118,14 +118,21 @@ const Hire = () => {
               <img
                 src={celtic}
                 className="w-2/3 md:w-1/3 rounded-lg border-2 border-linkBackground"
-                alt="a picture of Aaron standing in a grassy field of a highland games competition playing the bagpipes"
+                alt="Aaron standing in a grassy field of a highland games competition playing the bagpipes"
               ></img>
             </div>
             <div className="flex justify-center items-center">
               <hr className="w-3/4 md:w-full border-2 mt-8 mb-8 border-gray-800 dark:border-borderColor mt-12 mb-12"></hr>
             </div>
             <p className="text-center mt-8 font-bold">
-              Interested in any of our services or want to learn more? Contact
+              Interested in any of our services or want to learn more?{" "}
+              <a
+                href="/contact"
+                className="text-blue-700 dark:text-accentColor underline hover:font-bold"
+              >
+                Contact
+              </a>
+              {""}
               Aaron today to discuss your needs and how we can help make your
               event unforgettable!
             </p>
