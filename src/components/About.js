@@ -31,6 +31,7 @@ const About = () => {
                       href="https://meaghanharveyphotography.com/nanaimo-wedding-photographer/"
                       className="text-blue-700 dark:text-accentColor underline hover:font-bold"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Meaghan Harvey Photography
                     </a>{" "}
