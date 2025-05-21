@@ -25,20 +25,23 @@ const About = () => {
                   alt="Aaron dressed in a formal bagpiping outfit holding the great highland bagpipes"
                 />
                 <div className="text-center text-lg text-gray-800 dark:text-secondaryText mt-2 ">
-                  <p>Photo by:</p>
-                  <a
-                    href="https://meaghanharveyphoto.com/"
-                    className="text-blue-700 dark:text-accentColor underline hover:font-bold"
-                  >
-                    Meaghan Harvey Photography
-                  </a>
+                  <p>
+                    Photo by:{" "}
+                    <a
+                      href="https://meaghanharveyphotography.com/nanaimo-wedding-photographer/"
+                      className="text-blue-700 dark:text-accentColor underline hover:font-bold"
+                      target="_blank"
+                    >
+                      Meaghan Harvey Photography
+                    </a>{" "}
+                  </p>
                 </div>
               </div>
               <p>
-                With nearly 30 years of experience, Aaron is an invaluable
-                resource in the Vancouver Island bagpiping scene. He has
-                recently competed as a solo bagpiper at the grade 2 level and
-                has been the bagpiper for the Celtic Punk band{" "}
+                With 30 years of experience, Aaron is an invaluable resource in
+                the Vancouver Island bagpiping scene. He has recently competed
+                Provincially as a solo bagpiper at the grade 2 level and has
+                been the bagpiper for the Celtic Punk band{" "}
                 <a
                   href="https://www.thegrinningbarretts.com/"
                   className="text-blue-700 dark:text-accentColor underline hover:font-bold"
@@ -46,7 +49,7 @@ const About = () => {
                   {" "}
                   The Grinning Barretts
                 </a>{" "}
-                for almost 8 years. If you're looking for a versatile bagpiper,
+                for almost 9 years. If you're looking for a versatile bagpiper,
                 Aaron is your guy! His passion for bagpiping has also led him to
                 play the Irish whistle, where he has become a sought-after
                 performer. Together with his wife, he hosts a weekly Traditional

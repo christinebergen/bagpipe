@@ -5,32 +5,33 @@ import Divider from "../components/Divider";
 import celtic1 from "../assets/celtic1.webp";
 import email from "../assets/email.png";
 import skye from "../assets/skye.png";
-import darkemail from "../assets/emaildark.png"
+import darkemail from "../assets/emaildark.png";
 
 const Home = () => {
   return (
     <div className="container mx-auto p-4 mb-8">
-      <div className="bg-lightBackground dark:bg-darkBackground shadow-md dark:shadow-lg rounded-md p-10 mb-8">
-        <h2 className="text-2xl md:text-4xl text-center mb-4 font-bold text-gray-800 dark:text-white">
-          Celtic Sounds of Nanaimo: Bagpiper for Hire, Expert Instruction, and
-          Music Connections
-        </h2>
-        <div className="flex justify-center items-center">
-          <hr className="w-3/4 border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor"></hr>
+      <div className="flex flex-col justify-center items-center">
+        <div className=" bg-lightBackground dark:bg-darkBackground shadow-md dark:shadow-lg rounded-md p-10 md:m-20 mb-8">
+          <h2 className="text-2xl md:text-4xl text-center mb-4 font-bold text-gray-800 dark:text-white">
+            Celtic Sounds of Nanaimo: Musician for Hire & Expert Instruction
+          </h2>
+          <div className="flex justify-center items-center">
+            <hr className="w-3/4 border-2 mt-4 mb-4 border-gray-800 dark:border-borderColor"></hr>
+          </div>
+          <p className="text-center text-md md:text-xl text-gray-800 dark:text-white">
+            Whether you're seeking a small Celtic musical ensemble, a Pipes and
+            Drums band, a Celtic punk band, a piper to add a special touch to
+            your event, or want to learn the bagpipes yourself, Piper Aaron
+            Bergen is your go-to expert.
+          </p>
         </div>
-        <p className="text-center text-md md:text-xl text-gray-800 dark:text-white">
-          Whether you're seeking a small Celtic musical ensemble, a Pipes and
-          Drums band, a Celtic punk band, a piper to add a special touch to your
-          event, or want to learn the bagpipes yourself, Celtic Coast Bagiper
-          Aaron Bergen is your go-to expert.
-        </p>
       </div>
       <Slideshow />
 
       <div className="flex flex-col md:flex-row mt-10 mr-2 ml-2 md:m-20 gap-8">
         <a
           href="/about"
-          className="border-2 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
+          className="border-2 hover:border-4 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
         >
           <img
             src={image1}
@@ -48,7 +49,7 @@ const Home = () => {
 
         <a
           href="/hire"
-          className="border-2 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
+          className="border-2 hover:border-4 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
         >
           <img src={celtic1} className="w-2/3 md:w-1/3 h-auto rounded-lg" />
           <h1 className="text-4xl text-center mt-8 text-gray-800 dark:text-primaryText">
@@ -66,7 +67,7 @@ const Home = () => {
       <div className="flex flex-col md:flex-row m-2 md:m-20 gap-8">
         <a
           href="/lessons"
-          className="border-2 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
+          className="border-2 hover:border-4 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
         >
           <img
             src={skye}
@@ -86,7 +87,7 @@ const Home = () => {
         </a>
         <a
           href="/contact"
-          className="border-2 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
+          className="border-2 hover:border-4 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
         >
           <img src={email} className="w-1/4 h-auto dark:hidden" />
           <img src={darkemail} className="w-1/4 h-auto hidden dark:block"></img>

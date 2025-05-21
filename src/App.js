@@ -7,6 +7,7 @@ import About from "./components/About";
 import Lessons from "./components/Lessons";
 import Contact from "./components/Contact";
 import Hire from "./components/Hire";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Header />
 
         <main className="bg-medBackground dark:bg-medDarkBackground min-h-screen flex flex-col shadow-2xl">
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

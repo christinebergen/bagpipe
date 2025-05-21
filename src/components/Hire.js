@@ -41,9 +41,13 @@ const Hire = () => {
                 Perfect for festivals, pubs, and lively events.
               </li>
               <li className="mb-2">
-                <strong>Mid Island Competition Pipe and Drum Band:</strong> A
-                traditional pipe and drum band ideal for parades, ceremonies,
-                and cultural celebrations.
+                <strong>Pipe and Drum Bands:</strong>Aaron currently plays with
+                the Mid Island Competition Pipe and Drum Band, and although they
+                do not play events outside of competition, Aaron can help you
+                find a band who does. If you're looking for a traditional pipe
+                and drum band ideal for parades, ceremonies, or cultural
+                celebrations, Aaron has multiple connections throughout
+                Vancouver Island.
               </li>
               <li className="mb-2">
                 <strong>Collaborative Ensembles:</strong> We can arrange
@@ -61,35 +65,40 @@ const Hire = () => {
                 alt="an image of a pipe and drum band walking down a pathway"
                 className="w-full md:w-3/4 border-2 border-linkBackground rounded-lg"
               ></img>
-              <p className="text-gray-800 dark:text-accentColor">Mid Island Competition Pipe Band</p>
+              <p className="text-gray-800 dark:text-accentColor">
+                Mid Island Competition Pipe Band
+              </p>
             </div>
             <div className="flex justify-center items-center">
               <hr className="w-3/4 md:w-full border-2 mt-8 mb-8 border-gray-800 dark:border-borderColor"></hr>
             </div>
           </Fade>
           <Fade cascade damping={0.1} triggerOnce>
-            <h2 className="text-4xl text-center mb-4">
-              Teaching and Workshops
-            </h2>
+            <h2 className="text-4xl text-center mb-4">Bagpipe Lessons</h2>
             <p className="mb-2">
-              In addition to performances, Aaron offers teaching and workshops
-              for individuals and groups. These sessions can be tailored to meet
-              the needs of beginners or advanced players:
+              In addition to performances, Aaron offers bagpipe lessons. These
+              sessions can be tailored to meet the needs of beginners or
+              advanced players:
             </p>
             <ul className="list-disc list-inside ml-4 mb-6">
               <li className="mb-2">
-                <strong>Private Lessons:</strong> One-on-one instruction
-                focusing on technique, repertoire, and performance skills.
-              </li>
-              <li className="mb-2">
-                <strong>Group Workshops:</strong> Interactive workshops for
-                schools, community groups, or corporate team-building events.
-              </li>
-              <li className="mb-2">
-                <strong>Online Lessons:</strong> Flexible online lessons for
-                those who prefer to learn from the comfort of their home.
+                <strong>Private, in-person Lessons:</strong> One-on-one
+                instruction focusing on technique, repertoire, and performance
+                skills.
               </li>
             </ul>
+            <div className="flex justify-center items-center mb-16">
+              <p className="text-xl font-semibold italic">
+                For more information about Bagpipe Lessons, please see the{" "}
+                <a
+                  href="/lessons"
+                  className="text-blue-700 dark:text-accentColor underline hover:font-bold"
+                >
+                  Lessons
+                </a>{" "}
+                page
+              </p>
+            </div>
           </Fade>
           <Fade cascade damping={0.1} triggerOnce>
             <h2 className="text-4xl text-center mb-4">

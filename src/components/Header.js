@@ -37,7 +37,7 @@ const Header = () => {
             />
           </Link>
           <h1 className="text-xl md:text-3xl dark:text-white">
-            Celtic Coast Bagpiper
+            Celtic Coast Music
           </h1>
         </div>
         <div className="hidden md:flex md:text-2xl space-x-4">

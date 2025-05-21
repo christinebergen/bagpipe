@@ -117,7 +117,7 @@ const Lessons = () => {
                 <strong>Competitive Piping:</strong> Preparing for competitions
                 with advanced strategies and performance critiques.
               </li>
-              <li >
+              <li>
                 <strong>Collaborative Music:</strong> Playing with other
                 musicians, including participation in a Celtic punk band.
               </li>
@@ -168,7 +168,7 @@ const Lessons = () => {
           </Fade>
           <Fade cascade damping={0.1} triggerOnce>
             <h2 className="text-4xl text-center mb-4">
-              Why Choose Celtic Coast Bagpiper Aaron?
+              Why Choose Piper Aaron?
             </h2>
             <ul className="list-disc list-inside ml-4 mb-6">
               <li className="mb-2">
@@ -190,7 +190,15 @@ const Lessons = () => {
             </ul>
             <p className="text-center text-2xl font-bold pt-8">
               Ready to start your bagpipe journey or take your skills to new
-              heights? Contact Aaron today to schedule your first lesson!
+              heights?{" "}
+              <a
+                href="/contact"
+                className="text-blue-700 dark:text-accentColor underline hover:font-bold hover:italic"
+              >
+                {" "}
+                Contact
+              </a>{" "}
+              Aaron today to schedule your first lesson!
             </p>
           </Fade>
         </div>

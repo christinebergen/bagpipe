@@ -27,10 +27,10 @@ const photographers = {
   },
   colinSmith: {
     title: "Colin Smith Takes Pics",
-    link: "https://www.colinsmithtakespics.com/home",
+    link: "https://www.instagram.com/colinsmithtakespics/?hl=en",
   },
   christineBergen: { title: "Christine Bergen" },
-  meaghanHarvey: { title: "Meaghan Harvey", link: "https://meaghanharveyphoto.com/" },
+  meaghanHarvey: { title: "Meaghan Harvey", link: "https://meaghanharveyphotography.com/nanaimo-wedding-photographer/" },
 };
 
 const images = [
