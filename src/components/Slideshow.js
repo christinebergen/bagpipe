@@ -30,7 +30,10 @@ const photographers = {
     link: "https://www.instagram.com/colinsmithtakespics/?hl=en",
   },
   christineBergen: { title: "Christine Bergen" },
-  meaghanHarvey: { title: "Meaghan Harvey", link: "https://meaghanharveyphotography.com/nanaimo-wedding-photographer/" },
+  meaghanHarvey: {
+    title: "Meaghan Harvey",
+    link: "https://meaghanharveyphotography.com/nanaimo-wedding-photographer/",
+  },
 };
 
 const images = [
@@ -53,7 +56,6 @@ const images = [
   { src: image17, photographer: "christineBergen" },
   { src: image18, photographer: "meaghanHarvey" },
   { src: image19, photographer: "meaghanHarvey" },
-  
 ];
 
 const Slideshow = () => {
@@ -69,7 +71,10 @@ const Slideshow = () => {
   useEffect(() => {
     console.log("Current Index:", currentIndex);
     console.log("Current Image:", images[currentIndex]);
-    console.log("Current Photographer:", photographers[images[currentIndex].photographer]);
+    console.log(
+      "Current Photographer:",
+      photographers[images[currentIndex].photographer]
+    );
   }, [currentIndex]);
 
   const currentImage = images[currentIndex];
@@ -109,5 +114,3 @@ const Slideshow = () => {
 };
 
 export default Slideshow;
-
-
