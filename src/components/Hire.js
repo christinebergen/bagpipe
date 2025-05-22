@@ -132,7 +132,7 @@ const Hire = () => {
               >
                 Contact
               </a>
-              {""}
+              {" "}
               Aaron today to discuss your needs and how we can help make your
               event unforgettable!
             </p>
