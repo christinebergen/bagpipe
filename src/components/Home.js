@@ -64,7 +64,7 @@ const Home = () => {
             Hire Aaron
           </h1>
 
-          <p className="text-center text-md md:text-xl text-gray-800 dark:text-white mt-4">
+          <p className="text-center text-md md:text-xl text-gray-800 dark:text-white mt-4 lg:p-2">
             Aaron is a versatile musician. Whether you're looking for a piper to
             pipe you in at a special event, an energetic celtic punk band, or a
             pipes and drums ensemble, Aaron has the connections to make this
