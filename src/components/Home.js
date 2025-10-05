@@ -34,7 +34,14 @@ const Home = () => {
       <div className="flex flex-col md:flex-row mt-10 mr-2 ml-2 md:m-20 gap-8">
         <a
           href="/about"
-          className="border-2 hover:border-4 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
+          className="border-2 md:w-1/2 rounded-md shadow-lg p-4
+    flex flex-col items-center text-center
+    border-linkBackground dark:border-borderColor
+    bg-lightBackground dark:bg-darkBackground
+    transition
+    hover:shadow-xl
+    hover:ring-2 ring-linkBackground dark:ring-borderColor
+    ring-offset-2 ring-offset-lightBackground dark:ring-offset-darkBackground"
         >
           <img
             src={image1}
@@ -53,7 +60,14 @@ const Home = () => {
 
         <a
           href="/hire"
-          className="border-2 hover:border-4 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
+          className="border-2 md:w-1/2 rounded-md shadow-lg p-4
+    flex flex-col items-center text-center
+    border-linkBackground dark:border-borderColor
+    bg-lightBackground dark:bg-darkBackground
+    transition
+    hover:shadow-xl
+    hover:ring-2 ring-linkBackground dark:ring-borderColor
+    ring-offset-2 ring-offset-lightBackground dark:ring-offset-darkBackground"
         >
           <img
             src={celtic1}
@@ -64,7 +78,7 @@ const Home = () => {
             Hire Aaron
           </h1>
 
-          <p className="text-center text-md md:text-xl text-gray-800 dark:text-white mt-4 lg:p-2">
+          <p className="text-center text-md md:text-xl text-gray-800 dark:text-white mt-4">
             Aaron is a versatile musician. Whether you're looking for a piper to
             pipe you in at a special event, an energetic celtic punk band, or a
             pipes and drums ensemble, Aaron has the connections to make this
@@ -75,7 +89,14 @@ const Home = () => {
       <div className="flex flex-col md:flex-row m-2 md:m-20 gap-8">
         <a
           href="/lessons"
-          className="border-2 hover:border-4 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
+          className="border-2 md:w-1/2 rounded-md shadow-lg p-4
+    flex flex-col items-center text-center
+    border-linkBackground dark:border-borderColor
+    bg-lightBackground dark:bg-darkBackground
+    transition
+    hover:shadow-xl
+    hover:ring-2 ring-linkBackground dark:ring-borderColor
+    ring-offset-2 ring-offset-lightBackground dark:ring-offset-darkBackground"
         >
           <img
             src={skye}
@@ -96,7 +117,14 @@ const Home = () => {
         </a>
         <a
           href="/contact"
-          className="border-2 hover:border-4 md:w-1/2 rounded-md shadow-lg p-4 flex flex-col items-center text-center border-linkBackground dark:border-borderColor bg-lightBackground dark:bg-darkBackground"
+          className="border-2 md:w-1/2 rounded-md shadow-lg p-4
+    flex flex-col items-center text-center
+    border-linkBackground dark:border-borderColor
+    bg-lightBackground dark:bg-darkBackground
+    transition
+    hover:shadow-xl
+    hover:ring-2 ring-linkBackground dark:ring-borderColor
+    ring-offset-2 ring-offset-lightBackground dark:ring-offset-darkBackground"
         >
           <img
             src={email}

@@ -45,7 +45,7 @@ const Contact = () => {
               </a>
             </div>
 
-            <p className="mb-4">
+            <p className="mb-4 mt-12">
               <strong className="text-2xl mb-4 text-gray-800 dark:text-primaryText">
                 Social Media:
               </strong>
