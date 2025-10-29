@@ -38,10 +38,10 @@ const Contact = () => {
                 className="w-12 h-12 md:mr-8 hidden dark:block"
               />
               <a
-                href="mailto:aaron.bergen@telus.net"
+                href="mailto:aaronbergen@telus.net"
                 className="text-blue-700 text-2xl dark:text-accentColor underline hover:font-bold"
               >
-                aaron.bergen@telus.net
+                aaronbergen@telus.net
               </a>
             </div>
 

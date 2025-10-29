@@ -41,7 +41,7 @@ const About = () => {
               <p>
                 With 30 years of experience, Aaron is an invaluable resource in
                 the Vancouver Island bagpiping scene. He has recently competed
-                Provincially as a solo bagpiper at the grade 2 level and has
+                provincially as a solo bagpiper at the grade 2 level and has
                 been the bagpiper for the Celtic Punk band{" "}
                 <a
                   href="https://www.thegrinningbarretts.com/"
@@ -60,6 +60,18 @@ const About = () => {
             <br />
             <Fade cascade damping={0.1} triggerOnce>
               <p>
+                After taking a few years off from competing, Aaron competed
+                again in 2025 in the Pacific Northwest Competition
+                Circuit securing a 4th place finish overall in the Grade 2 solo
+                Bagpiping category. In addition to this, he won the Aggregate
+                award for Grade 2 Solo Piping at the BC Pipers' Association Mini
+                Gathering. Reconnecting with the competition scene has reignited
+                his enthusiasm, and he looks forward to continuing next year.
+              </p>
+            </Fade>
+            <br />
+            <Fade cascade damping={0.1} triggerOnce>
+              <p>
                 In addition to solo competitions, Aaron has competed with pipe
                 and drum bands, performed at numerous special occasions
                 (including his own wedding), and even played his bagpipes at the
@@ -73,10 +85,10 @@ const About = () => {
             <br />
             <Fade cascade damping={0.1} triggerOnce>
               <p>
-                Aaron's polished playing and remarkable talent for mastering the
-                bagpipes can be attributed to his instructors Carol Fowler, Bill
-                Grant, Angus G. MacLeod, and James Barrie, many of whom were
-                trained by legendary bagpipers in Scotland.
+                Aaron's polished playing and remarkable technical mastery can be
+                attributed to his instructors Carol Fowler, Bill Grant, Angus G.
+                MacLeod, and James Barrie, many of whom were trained by
+                legendary bagpipers in Scotland.
               </p>
             </Fade>
             <br />
