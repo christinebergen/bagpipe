@@ -61,12 +61,14 @@ const About = () => {
             <Fade cascade damping={0.1} triggerOnce>
               <p>
                 After taking a few years off from competing, Aaron competed
-                again in 2025 in the Pacific Northwest Competition
-                Circuit securing a 4th place finish overall in the Grade 2 solo
+                again in 2025 in the Pacific Northwest Competition Circuit
+                securing a 4th place finish overall in the Grade 2 solo
                 Bagpiping category. In addition to this, he won the Aggregate
-                award for Grade 2 Solo Piping at the BC Pipers' Association Mini
-                Gathering. Reconnecting with the competition scene has reignited
-                his enthusiasm, and he looks forward to continuing next year.
+                award for Grade 2 Solo Piping at the BC Pipers' Association
+                Annual Gathering, as well as Aggregate at both the Kamloops BC
+                and Campbell River BC Highland Games. Reconnecting with the
+                competition scene has reignited his enthusiasm, and he looks
+                forward to continuing next year.
               </p>
             </Fade>
             <br />
